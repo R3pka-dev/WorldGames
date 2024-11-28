@@ -1,0 +1,247 @@
+header, footer{
+    background:#37474F;
+    padding:10px
+  }
+  .footer-columns{
+    display:flex;
+  }
+  .footer-column{
+    flex:50%;
+    margin:20px;
+  }
+  .post{
+    display:flex;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+    background-color:#607D8B;
+    margin-right:20px;
+    margin-top:20px;
+  }
+  .post img{
+    margin:20px;
+    transition: transform 0.5s;
+  }
+  .post img:hover{
+    transform: rotate(360deg);
+  }
+  .posts{
+    display:flex;
+  }
+  #menu1{
+    position:relative;
+    display:block;
+    width:100%;
+    height:auto;
+    z-index:10;
+  }
+  #menu1 ul{
+    position:relative;
+    margin:0;
+    padding:0;
+    list-style:none;
+    width:100%;
+  }
+  #menu1 ul li{
+    position:relative;
+    display:block;
+    float:left;
+  }
+  #menu1 ul li a{
+    display:block;
+    padding:9px 25px;
+    font-size:14px;
+    text-transform:uppercase;
+    color:white;
+    transition: transform 0.3s;
+  }
+  #menu1 ul li a:hover{
+    transform: scale(1.1) rotate(-5deg);
+    color:#c3dae6
+  }
+  #menu1 ul li ul{
+    position:absolute;
+    top:36px;
+    display:none;
+    width:200px;
+    background:#78909C;
+  }
+  #menu1 ul li:hover ul{
+    display:block;
+  }
+  #menu1 ul li ul li{
+    float:none;
+    width:100%;
+  }
+  #menu1  ul li ul li a{
+    border-top:1px soild #fff;
+    padding:7px 25px;
+    font-family: 'Edu Australia VIC WA NT Hand Precursive', sans-serif;
+  }
+  header{
+    display:flex;
+  }
+  body{
+    background-color:#474a6a;
+    font-family:'Lora', sans-serif ;
+  }
+  footer {
+    position: relative;
+    height: auto; 
+  }
+  footer img {
+    float: left;
+    margin-right: 20px;
+  }
+  #menu1 {
+    float: left;
+    margin-top: 0;
+  }
+  
+  .footer-columns {
+    clear: both; 
+    margin-top: 20px;
+  }  
+  .carousele{
+    margin: 10px;
+    max-width: 100%;
+  }
+  .carousele-element{
+    margin: 40px;
+  }
+  .carousele div img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+.slick.prev, .slick-next{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+}
+.slick-dots li button:before{
+    color: #000;
+    font-size: 30px;
+}
+#menu2 ul{
+  position:relative;
+  margin:0;
+  padding:0;
+  list-style:none;
+  width:100%;
+}
+#menu2 ul li{
+  position:relative;
+  display:block;
+  float:left;
+}
+#menu2 ul li a{
+  display:block;
+  padding:9px 25px;
+  font-size:14px;
+  text-transform:uppercase;
+  color:white;
+  font-family: 'Edu Australia VIC WA NT Hand Precursive', sans-serif;
+  transition: transform 0.3s;
+}
+#menu2 ul li a:hover{
+  transform: scale(1.1) rotate(-5deg);
+  color:#c3dae6
+}
+#menu2 ul li ul{
+  position:absolute;
+  top:36px;
+  display:none;
+  width:200px;
+  background:#78909C;
+}
+#menu2 ul li:hover ul{
+  display:block;
+}
+#menu2 ul li ul li{
+  float:none;
+  width:100%;
+}
+#menu2  ul li ul li a{
+  border-top:1px soild #fff;
+  padding:7px 25px;
+}
+h2{
+  text-align: center;
+}
+.carousele-element{
+  margin-bottom: auto;
+}
+#office{
+  text-align: center;
+  padding: 50px;
+  background-color: #275268;
+}
+.conteiner{
+  position: relative;
+  width: 500px;
+  height: 350px;
+  margin: 0 auto;
+  background: url('../img/7422b363-6476-40b1-8cef-d1517c09f68d.jpg') no-repeat center center;
+  background-size: cover;
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 0.5px 15px rgba(0,0,0,0.1);
+}
+.city{
+  position: absolute;
+  padding: 10px;
+  background-color: rgba(50,46,46,0.7);
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.city::before{
+  content:'';
+  position:  absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,0,0,0.4);
+  border-radius: 50%;
+  transform: scale(1);
+  transform-origin: center;
+  opacity: 0;
+  z-index: -1;
+  transition: opasity 0.4s ease;
+}
+.city:hover{
+  transform: scale(1.2);
+  background-color: rgba(255,0,0,0.8);
+  color: black;
+}
+.city:hover::before{
+  opacity: 1;
+  animation: pulse 1s infinite;
+}
+@keyframes pulse{
+  0%{
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50%{
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+.city-1{
+  top:60px; left:120px
+}
+.city-2{
+  top:180px; left:230px
+}
+.city-3{
+  top:120px; left:350px
+}
